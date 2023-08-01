@@ -69,7 +69,9 @@
 
 </div>
 
+<!--LOOP-->
 <div *ngFor="let flight of searchResult">
+
   <div class="card text-dark mt-5 text-center">
     <div class="card-body" style="padding: 20px; background-color:#e5ecf26e">
       <h6 class="card-title">{{flight.airline}}</h6>
@@ -113,8 +115,9 @@
 
             <i class="fas fa-usd">{{flight.price}}</i>
             <br />
+
             <!--Book button-->
-            <a class="btn btn-secondary btn-lg mt-2">
+            <a [routerLink]="['/book-flight', flight.id]" class="btn btn-secondary btn-lg mt-2">
               <i class="fas fa-ticket"></i>
               Book
             </a>

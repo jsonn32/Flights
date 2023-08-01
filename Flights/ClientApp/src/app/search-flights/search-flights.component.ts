@@ -14,6 +14,7 @@ export class SearchFlightsComponent implements OnInit{
   constructor(private flightService: FlightService) { }
 
   ngOnInit(){
+
   }
 
   search() {
@@ -27,3 +28,5 @@ export class SearchFlightsComponent implements OnInit{
   }
 
 }
+
+
